@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #222941;
+    --second-bg-color: #d1996b;
+    --text-color: #fff;
+    --main-color: rgb(15, 16, 53);
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/restaurant-interior.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 9%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+
+}
+
+.navbar a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.header a i {
+    font-size: 2rem;
+    color: var(--text-color);
+    background: transparent;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.header a i:hover {
+    color: rgb(228, 0, 0);
+    box-shadow: 0 0 2rem rgb(253, 253, 253);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-shadow: #E8BEAC;
+
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    /* display: inline-block; */
+    padding: 1rem 2.8rem;
+    background-color: rgb(255 151 64);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgb(210 124 154);
+    font-size: 1.6rem;
+    color: #02112d;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: all 0.5s ease 0s;
+}
+
+.btn:hover {
+    box-shadow: none;
+    background-color: rgb(218 214 255);
+    box-shadow: 0 0 1rem rgb(26 70 255);
+    color: #02112d;
+    transition: all 0.5s ease 0s;
+
+}
+
+.menu {
+    background: var(--second-bg-color);
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    background: #fff;
+    box-direction: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    box-shadow: #02112d;
+
+}
+
+.menu .box-container .box:hover {
+    border-color: rgb(130, 222, 250);
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+    box-shadow: 0 0 1rem rgb(255, 43, 28);
+}
+
+.menu h3 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.menu h1 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.menu .box-container .box .image {
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.menu .box-container .box .content h3 {
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+.menu .box-container .box .content p {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+    margin: 2rem;
+
+}
+
+.menu .box-container .box .content .price {
+    text-align: center;
+    color: green;
+    margin-left: 15rem;
+    font-size: 2.5rem;
+}
+
+.gallery {
+    background: var(--bg-color);
+}
+
+.containerrr {
+    width: 100%;
+    text-align: center;
+}
+
+.containerrr h1 {
+    font-weight: 700;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+
+}
+
+.containerrr h1:hover {
+    border-color: rgb(30, 7, 85);
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+    box-shadow: 0 0 5rem rgb(255, 43, 28);
+}
+
+.pic {
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+
+}
+
+.photo-gallery {
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.pic::before {
+    content: "PHOTO GALLERY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: -100px;
+    /* opacity: 0; */
+    transition: 0.3s;
+    transition-delay: .2s;
+    z-index: 1;
+
+}
+
+
+.pic::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+
+.pic:hover::after {
+    height: 100%;
+}
+
+.pic:hover::before {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.about {
+    background: var(--second-bg-color);
+}
+
+.about .row {
+    display: flex;
+    flex: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.about .row .image img:hover {
+    border-color: rgb(30, 7, 85);
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    line-height: 2;
+}
+
+.about .row .content .icons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.about .row .content .icons-container .icons {
+    background: #eee;
+    border-radius: .5rem;
+    background: transparent;
+    /* border: 1rem solid rgba(0, 0, 0, .4); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 1 17rem;
+}
+
+.about .row .content .icons-container .icons i {
+    font-size: 2.5rem;
+    color: green;
+}
+
+.about .row .content .icons-container .icons span {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.about h3 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.about h1 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.about .row .content h3 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.about .row .content p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.contact h2 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background: var(--text-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+
+
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+
+    background: var(--main-color);
+
+}
+
+
+.footer-text p {
+    font-size: 1.6rem;
+}
